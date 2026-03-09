@@ -1,0 +1,194 @@
+body{
+margin:0;
+font-family:system-ui;
+background:#111827;
+color:white;
+}
+
+.header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 40px;
+border-bottom:1px solid #374151;
+}
+
+.logo{
+font-size:22px;
+}
+
+.navbar a{
+margin-left:25px;
+text-decoration:none;
+color:white;
+font-size:18px;
+transition:0.2s;
+}
+
+.navbar a:hover{
+color:#38bdf8;
+}
+
+
+.hero{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:80px;
+padding:80px 40px;
+}
+
+.hero-text{
+max-width:500px;
+}
+
+.hero-text h1{
+font-size:42px;
+margin-bottom:10px;
+}
+
+.hero-text p{
+font-size:18px;
+color:#9ca3af;
+}
+
+.hero-buttons{
+margin-top:25px;
+}
+
+
+.resume-btn{
+padding:12px 24px;
+background:#4b5563;
+color:white;
+text-decoration:none;
+border-radius:6px;
+margin-right:10px;
+transition:0.25s;
+}
+
+.resume-btn:hover{
+background:#374151;
+transform:translateY(-2px);
+}
+
+.github-btn{
+padding:12px 24px;
+background:#16a34a;
+color:white;
+text-decoration:none;
+border-radius:6px;
+transition:0.25s;
+}
+
+.github-btn:hover{
+background:#15803d;
+transform:translateY(-2px);
+}
+
+
+.hero-image img{
+width:260px;
+border-radius:12px;
+}
+
+
+.projects-preview{
+padding:60px 40px;
+}
+
+.projects{
+padding:60px 40px;
+}
+
+.projects h2{
+text-align:center;
+margin-bottom:40px;
+}
+
+.project-container{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:30px;
+}
+
+.project-card{
+background:#1f2937;
+padding:25px;
+width:280px;
+border-radius:10px;
+transition:0.25s;
+}
+
+.project-card a{
+text-decoration:none;
+color:white;
+display:block;
+}
+
+.project-card:hover{
+transform:translateY(-5px);
+}
+
+
+
+.project-detail{
+max-width:900px;
+margin:auto;
+padding:60px 20px;
+}
+
+.project-detail h1{
+text-align:center;
+margin-bottom:40px;
+}
+
+.video-container{
+display:flex;
+justify-content:center;
+margin-bottom:40px;
+}
+
+.video-container video{
+width:50%;
+max-width:350px;
+border-radius:10px;
+}
+
+.project-description{
+color:#d1d5db;
+line-height:1.6;
+}
+
+.project-description ul{
+margin-top:10px;
+}
+
+/* Mobile responsive */
+
+@media (max-width:768px){
+
+.hero{
+flex-direction:column;
+text-align:center;
+}
+
+.hero-image img{
+width:200px;
+}
+
+.header{
+flex-direction:column;
+}
+
+.navbar{
+margin-top:10px;
+}
+
+.project-container{
+flex-direction:column;
+align-items:center;
+}
+
+}
